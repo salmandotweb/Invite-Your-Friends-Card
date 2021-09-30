@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+:root{
+    --white:#fff;
+    --black:#000;
+    --primary:#12143B;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #A4A4B4;
+    font-size: 1.6rem;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* End of Common Styles */
+
+/* Start of card */
+.card__wrapper{
+    background: var(--white);
+    border-radius: 1rem;
+    color: var(--primary);
+    overflow: hidden;
+    max-width: 40rem;
+}
+.upper__portion{
+    padding: 3rem 4rem;
+}
+.upper__portion h2{
+    font-size: 2rem;
+}
+.upper__portion p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.5rem 0;
+}
+.select__project{
+    border: .115rem solid #A4A4B4;
+    padding: 1.3rem 1.5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.lower__portion{
+    background: #f0f0f0;
+    padding: 2rem 4rem;
+}
+.social-buttons__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 0;
+}
+.btn{
+    background: var(--primary);
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: .4rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--white);
+}
+.btn:active{
+    transform: scale(.98);
+}
+.lower__portion p{
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+.lower__portion input[type="email"]{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.4rem;
+    border: .1rem solid #A4A4B4;
+    background: var(--white);
+    padding: 1rem;
+    width: 100%;
+    border-radius: .5rem;
+}
+.option__buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+.cancelBtn{
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+}
+.teammateBtn{
+    background: var(--primary);
+    border: none;
+    color: var(--white);
+    padding: 1.3rem 2rem;
+    border-radius: .4rem;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+}
+.teammateBtn:active,
+.cancelBtn:active{
+    transform: scale(.98);
+}
+
+@media screen and (max-width:1024px) {
+    html{
+        font-size: 58%;
+    }
+}
+@media screen and (max-width:826px) {
+    .createdBy{
+        display: none;
+    }
+}
+@media screen and (max-width:425px) {
+    html{
+        font-size: 50%;
+    }
+}
+@media screen and (max-width:360px) {
+    html{
+        font-size: 45%;
+    }
+}
+@media screen and (max-width:315px) {
+    html{
+        font-size: 40%;
+    }
+}
+/* end of card */
+
+.createdBy{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+.createdBy h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
